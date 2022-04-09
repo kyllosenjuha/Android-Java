@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/otsikko"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:background="@drawable/bg_otsikko"
+                android:textStyle="bold"
+                android:text="Bluetooth Remote Control"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-30dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/onBluetoothButton"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="BLUETOOTH\nCONNECT"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/offBluetoothButton"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="BLUETOOTH\nCLOSE"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bluetoothStatusTextView"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/bluetooth_status"
+                android:drawableTop="@drawable/ic_bluetooth"
+                android:paddingTop="17dp"
+                android:gravity="center_horizontal|top"
+                android:text="STATUS"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-40dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+
+            <Button
+                android:id="@+id/onButton1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL1\nTURN ON" />
+
+            <Button
+                android:id="@+id/offButton1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL1\nTURN OFF" />
+
+            <TextView
+
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="45sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otsikko"
+                android:drawableTop="@drawable/ic_power"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="2dp"
+                android:text="CH1 STATUS"
+
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-36dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+
+            <Button
+                android:id="@+id/onButton2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL2\nTURN ON" />
+
+            <Button
+                android:id="@+id/offButton2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL2\nTURN OFF" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otsikko"
+                android:drawableTop="@drawable/ic_power"
+                android:paddingTop="2dp"
+                android:gravity="center_horizontal|top"
+                android:textColor="@color/white"
+
+                android:textStyle="bold"
+                android:text="CH2 STATUS" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-36dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/onButton3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL3\nTURN ON" />
+
+            <Button
+                android:id="@+id/offButton3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL3\nTURN OFF" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otsikko"
+                android:textColor="@color/white"
+                android:drawableTop="@drawable/ic_power"
+                android:paddingTop="2dp"
+                android:gravity="center_horizontal|top"
+                android:textStyle="bold"
+                android:text="CH3 STATUS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="-36dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/onButton4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL4\nTURN ON" />
+
+            <Button
+                android:id="@+id/offButton4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CHANNEL4\nTURN OFF" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:layout_marginBottom="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otsikko"
+                android:textColor="@color/white"
+                android:drawableTop="@drawable/ic_power"
+                android:paddingTop="2dp"
+                android:gravity="center_horizontal|top"
+                android:textStyle="bold"
+                android:text="CH4 STATUS" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
